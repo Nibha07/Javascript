@@ -1,0 +1,19 @@
+<html>
+    <body>
+    <div id="message"></div>
+
+    <script>
+        function arrayAllocation(){
+            var testArray = new Array(100); 
+            try {
+                testArray.push(20);  //<-- This will exceed the limit and error msg will be displayed.
+                if(testArray.length>100) throw "Oops! Array Limit Exceeded" ;               
+            } catch (error) {
+                document.getElementById("message").innerHTML=error;
+            }
+        }
+
+        arrayAllocation();
+    </script>    
+    </body>
+</html>

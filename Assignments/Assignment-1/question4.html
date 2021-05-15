@@ -1,0 +1,12 @@
+<html>
+    <body >
+        <div id="result" ></div>
+        <script>
+            var randomArray= new Array(100);
+
+            randomArray = [...Array(100)].map(() => (Math.random()) );
+            
+            document.getElementById("result").innerHTML= randomArray;
+        </script>
+    </body>
+</html>

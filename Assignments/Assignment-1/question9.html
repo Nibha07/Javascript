@@ -1,0 +1,27 @@
+
+<html>
+    <body>
+            <form>
+                Check if even or not: <input type="number" id="input"> <br> <br>
+                <button onclick="Even(); return false;">Check</button>
+            </form>
+            <br> <br>
+            <div id="result"></div>
+
+            <script>
+                function isEven(x)
+                {
+                    return x%2==0;
+                }
+
+                function Even()
+                {
+                    var number=document.getElementById("input").value;
+                    var res =isEven(number);
+                    document.getElementById("result").innerHTML = res==true?"It is even": "it is not even";
+
+                }
+            </script>
+        </div>
+    </body>
+</html>
